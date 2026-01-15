@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dance Central | CA Dance and Cheer Competition </title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+<div class="sidebar-overlay" id="overlay"></div>
+<button class="menu-toggle" id="menuBtn">☰</button>
+
+<div class="app-container">
+    <aside class="sidebar" id="sidebar">
+        <button class="close-sidebar" id="closeBtn">✕</button>
+
+        <div class="sidebar-header">
+            <span class="site-title">Dance Central</span>
+            <span class="event-subtitle">CA Dance and Cheer Competition</span>
+        </div>
+        <nav class="nav-menu">
+            <a href="#" class="nav-item" data-view="info">Information</a>
+            <a href="#" class="nav-item" data-view="schedule">Schedule</a>
+            <a href="#" class="nav-item" data-view="placements">Placements</a>
+        </nav>
+    </aside>
+
+    <main class="content-area">
+        <div id="info" class="view">
+            <h1>Information</h1>
+            <div class="card">
+                <p>Welcome to the Cheerpros CA Cheer and Dance Competition. Use the menu to check performance times and final placements.</p>
+            </div>
+        </div>
+
+        <div id="schedule" class="view">
+            <h1>Schedule</h1>
+
+            <div class="filter-bar card">
+                <div class="filter-group">
+                    <label>Team</label>
+                    <select id="teamSelect">
+                        <option value="">All Teams</option>
+                        {% for team in teams %}
+                        <option value="{{ team }}">{{ team }}</option>
+                        {% endfor %}
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label>Division</label>
+                    <select id="divisionSelect">
+                        <option value="">All Divisions</option>
+                        {% for division in divisions %}
+                        <option value="{{ division }}">{{ division }}</option>
+                        {% endfor %}
+                    </select>
+                </div>
+            </div>
+
+            <div class="card">
+                <table>
+                    <thead>
+                        <tr><th>Time</th><th>Panel</th><th>Division</th><th>Team</th></tr>
+                    </thead>
+                    <tbody>
+                        {% for p in performances %}
+                        <tr data-team="{{ p.team }}" data-division="{{ p.division }}">
+                            <td data-label="Time">{{ p.time }}</td>
+                            <td data-label="Panel">{{ p.stage }}</td>
+                            <td data-label="Division">{{ p.division }}</td>
+                            <td data-label="Team"><strong>{{ p.team }}</strong></td>
+                        </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <div id="placements" class="view">
+            <h1>Placements</h1>
+            {% for p in placements %}
+            <div class="division-block">
+                <button class="division-toggle">
+                    {{ p.division }} <span>+</span>
+                </button>
+                <div class="division-results">
+                    <p style="color: var(--text-muted); font-style: italic;">Results pending...</p>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </main>
+</div>
+
+<script src="/static/script.js"></script>
+</body>
+</html>

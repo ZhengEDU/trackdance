@@ -1,0 +1,157 @@
+/* FONT REGISTRATION */
+@font-face {
+    font-family: 'Uni Neue';
+    src: url('/static/fonts/UniNeue-Trial-Black.ttf') format('truetype');
+    font-weight: 900;
+}
+@font-face {
+    font-family: 'Uni Neue';
+    src: url('/static/fonts/UniNeue-Trial-Bold.ttf') format('truetype');
+    font-weight: 700;
+}
+@font-face {
+    font-family: 'Uni Neue';
+    src: url('/static/fonts/UniNeue-Trial-Book.ttf') format('truetype');
+    font-weight: 400;
+}
+
+:root {
+    --sidebar-width: 280px;
+    --primary: #2563eb;
+    --bg: #f8fafc;
+    --white: #ffffff;
+    --border: #e2e8f0;
+    --text-main: #1e293b;
+    --text-muted: #64748b;
+}
+
+* { box-sizing: border-box; }
+
+body {
+    font-family: 'Uni Neue', sans-serif;
+    margin: 0;
+    background-color: var(--bg);
+    color: var(--text-main);
+    font-size: 16px;
+}
+
+/* MOBILE ELEMENTS */
+.sidebar-overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.4);
+    z-index: 999;
+}
+
+.menu-toggle {
+    display: none;
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    z-index: 1001;
+    background: var(--primary);
+    color: white;
+    border: none;
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+    font-weight: 900;
+    cursor: pointer;
+    box-shadow: 0 4px 12px rgba(37, 99, 235, 0.3);
+}
+
+/* Close Button inside Sidebar */
+.close-sidebar {
+    display: none;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    font-weight: 900;
+    color: var(--text-muted);
+    cursor: pointer;
+}
+
+.app-container { display: flex; min-height: 100vh; }
+
+/* SIDEBAR */
+.sidebar {
+    width: var(--sidebar-width);
+    background: var(--white);
+    border-right: 1px solid var(--border);
+    position: fixed;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    z-index: 1000;
+    transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.sidebar-header { padding: 40px 24px 32px; border-bottom: 1px solid var(--border); }
+.site-title { font-weight: 900; font-size: 1.4rem; text-transform: uppercase; color: var(--text-main); }
+.event-subtitle { font-weight: 700; font-size: 0.85rem; color: var(--primary); display: block; margin-top: 4px; }
+
+.nav-menu { flex: 1; padding: 24px 16px; }
+.nav-item {
+    display: block;
+    padding: 12px 16px;
+    color: var(--text-muted);
+    text-decoration: none;
+    border-radius: 8px;
+    margin-bottom: 6px;
+    font-weight: 700;
+    transition: 0.2s;
+}
+.nav-item.active-tab { background: var(--primary); color: white; }
+
+/* MAIN CONTENT */
+.content-area { margin-left: var(--sidebar-width); flex: 1; padding: 40px; }
+.view { display: none; max-width: 900px; margin: 0 auto; }
+.view.active { display: block; }
+h1 { font-weight: 900; font-size: 2.2rem; margin-bottom: 24px; }
+
+/* CARDS & TABLES */
+.card { background: var(--white); border-radius: 12px; border: 1px solid var(--border); padding: 20px; margin-bottom: 20px; }
+.filter-bar { display: flex; gap: 15px; flex-wrap: wrap; }
+.filter-group { display: flex; flex-direction: column; gap: 4px; }
+.filter-group select { padding: 8px; border-radius: 6px; border: 1.5px solid var(--border); font-family: 'Uni Neue'; font-weight: 700; min-width: 180px; }
+
+table { width: 100%; border-collapse: collapse; }
+th { text-align: left; font-size: 0.75rem; text-transform: uppercase; color: var(--text-muted); padding: 12px; border-bottom: 2px solid var(--border); }
+td { padding: 12px; border-bottom: 1px solid var(--border); }
+tr.highlight { background: #eff6ff; color: var(--primary); font-weight: 700; }
+
+/* PLACEMENTS */
+.division-block { border: 1px solid var(--border); border-radius: 10px; margin-bottom: 10px; overflow: hidden; }
+.division-toggle { width: 100%; padding: 15px; background: white; border: none; display: flex; justify-content: space-between; font-family: 'Uni Neue'; font-weight: 700; cursor: pointer; }
+.division-results { display: none; padding: 15px; background: #fafafa; border-top: 1px solid var(--border); }
+.division-results.open { display: block; }
+
+/* MOBILE RESPONSIVENESS */
+@media (max-width: 768px) {
+    .menu-toggle { display: block; }
+    .close-sidebar { display: block; } /* Show X inside sidebar */
+
+    .sidebar { transform: translateX(-100%); }
+    .sidebar.open { transform: translateX(0); }
+    .sidebar-overlay.open { display: block; }
+
+    /* Hide MENU button when sidebar is open */
+    .sidebar.open ~ .menu-toggle { display: none; }
+
+    .content-area { margin-left: 0; padding: 90px 20px 40px; }
+
+    /* Tablet/Mobile filters */
+    .filter-bar { flex-direction: column; }
+    .filter-group select { width: 100%; }
+
+    /* Table to Cards */
+    table, thead, tbody, th, td, tr { display: block; }
+    thead { display: none; }
+    tr { margin-bottom: 15px; border: 1px solid var(--border); border-radius: 10px; background: white; padding: 10px; }
+    td { border: none; padding: 6px 10px; display: flex; justify-content: space-between; }
+    td::before { content: attr(data-label); font-weight: 700; color: var(--text-muted); font-size: 0.75rem; }
+}
