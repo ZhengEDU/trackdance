@@ -1,128 +1,133 @@
-time,stage,team,division
-9:04 AM,Panel 2,Azusa Raiders - Jr. Gremlins,8U Level 1
-9:08 AM,Panel 1,Canyon Lake MS,Jr. High Int.
-9:12 AM,Panel 2,Azusa Raiders - Gremlin,10U Level 1
-9:16 AM,Panel 1,Saint Barbara School,Elementary Nov.
-9:20 AM,Panel 2,Azusa Raiders - Jr. Midgets,13U Level 2
-9:24 AM,Panel 1,Mayfair MS,EXHIBITION Jr. High
-9:28 AM,Panel 2,Saugus Spartan X-Treme,13U NT Level 3
-9:32 AM,Panel 1,Shandin Hills MS,Jr. High NT Nov.
-9:36 AM,Panel 2,Billy Clower X-Plosion,10U Level 1
-9:40 AM,Panel 1,Carter HS,Varsity Group Stunt Int.
-9:44 AM,Panel 2,Empire Athletics - Tiny Sparkles,6U Level 1 Limited
-9:48 AM,Panel 1,Orange Lutheran HS,Varsity Group Stunt Int.
-9:52 AM,Panel 2,Royal Storm - Mini Mafia,6U Level 1 Limited
-9:56 AM,Panel 1,Elsinore HS,Varsity Group Stunt Int.
-10:00 AM,Panel 2,Starlights Cheer - Twyla,8U Level 1 Limited
-10:08 AM,Panel 2,Supernova Stardust,8U Level 1 Limited
-10:12 AM,Panel 1,Canyon Lake MS A,Jr. High Group Stunt Nov.
-10:16 AM,Panel 2,Billy Clower Sparks,8U Level 1 Limited
-10:20 AM,Panel 1,Canyon Lake MS B,Jr. High Group Stunt Nov.
-10:24 AM,Panel 2,SMAX - Pop Princesses,10U Level 1 Limited
-10:28 AM,Panel 1,Canyon Lake MS C,Jr. High Group Stunt Nov.
-10:32 AM,Panel 2,Rise Up Athletics - White Frost,12U Level 1
-10:36 AM,Panel 1,Mayfair HS,EXHIBITION Varsity
-10:40 AM,Panel 2,Royal Storm - Shade,12U Level 1
-10:44 AM,Panel 1,Canyon Lake MS (INT),Jr. High Group Stunt Int.
-10:48 AM,Panel 2,Mayans Cheer & Dance - Shade,14U Level 1
-10:52 AM,Panel 1,Ayala HS,Varsity Mascot
-10:56 AM,Panel 2,SMAX - Rock Legends,14U Level 1
-11:00 AM,Panel 1,Canyon Lake MS (ADV),Jr. High Group Stunt Adv.
-11:04 AM,Panel 2,Starlights Cheer - Nova,18U Level 1
-11:12 AM,Panel 2,Rise Up Athletics - Teal Tide,14U Level 2
-11:16 AM,Panel 1,Orange Lutheran HS,Small Game Day Spirit Cheer / All Prog.
-11:20 AM,Panel 2,Murrieta Mavericks - Fearless,14U Level 2
-11:24 AM,Panel 1,Saugus HS,Small Game Day Spirit Cheer / All Prog.
-11:28 AM,Panel 2,Supernova Stellar,14U Level 2
-11:32 AM,Panel 1,Cerritos HS,Large Game Day Spirit Cheer / All Prog.
-11:36 AM,Panel 2,So Cal Thunder Shock,16U Level 2
-11:40 AM,Panel 1,Chino Hills HS,Large Game Day Spirit Cheer / All Prog.
-11:44 AM,Panel 2,Billy Clower Dynamite,16U Level 2
-11:48 AM,Panel 1,Yorba Linda HS,Large Game Day Spirit Cheer / All Prog.
-11:52 AM,Panel 2,Royal Storm - Karma,10U Level 2
-1:00 PM,Panel 1,Summit HS,Freshman Nov.
-1:04 PM,Panel 2,Century HS,Small JV Nov.
-1:08 PM,Panel 1,Downey HS,Freshman Nov.
-1:12 PM,Panel 2,Cypress HS,Small JV Nov.
-1:16 PM,Panel 1,Paramount HS,Freshman Nov.
-1:20 PM,Panel 2,Temescal Canyon HS,Small JV Nov.
-1:24 PM,Panel 1,Downey HS,Small JV Int.
-1:28 PM,Panel 2,Cypress HS,Small Varsity Nov.
-1:32 PM,Panel 1,El Dorado HS,Small JV Int.
-1:36 PM,Panel 2,Palm Desert HS,Small Varsity Nov.
-1:40 PM,Panel 1,Yorba Linda HS,Small JV Int.
-1:44 PM,Panel 2,Yucaipa HS,Med/Lg Varsity Nov.
-1:48 PM,Panel 1,La Serna HS,Large JV Int.
-1:52 PM,Panel 2,Charter Oak HS,Med/Lg Varsity Nov.
-1:56 PM,Panel 1,Summit HS,JV Co-Ed Nov.
-2:00 PM,Panel 2,Upland HS,Super Varsity Nov.
-2:04 PM,Panel 1,Mayfair HS,Small JV NT Nov.
-2:08 PM,Panel 2,Century HS,Varsity Co-Ed Nov.
-2:12 PM,Panel 1,Cerritos HS,Small JV NT Nov.
-2:16 PM,Panel 2,Chino Hills HS,Varsity Int.
-2:20 PM,Panel 1,Sonora HS,Small JV NT Nov.
-2:24 PM,Panel 2,Summit HS,Varsity Co-Ed Int.
-2:28 PM,Panel 1,Paramount HS,Small JV NT Nov.
-2:32 PM,Panel 2,La Serna HS,Varsity Adv.
-2:36 PM,Panel 1,Maria Carrillo HS,Small JV NT Nov.
-2:40 PM,Panel 2,Yorba Linda HS,Varsity Adv.
-2:44 PM,Panel 1,La Mirada HS,Large JV NT Nov.
-2:48 PM,Panel 2,Downey HS,Varsity Small Co-Ed Adv.
-2:52 PM,Panel 1,Saugus HS,Small JV NT Adv.
-2:56 PM,Panel 2,Elsinore HS,Small Varsity NT Int.
-3:00 PM,Panel 1,Rialto HS,Large JV NT Adv.
-3:04 PM,Panel 2,La Mirada HS,Med Varsity NT Int.
-3:08 PM,Panel 1,La Habra HS,JV Co-Ed NT Nov.
-3:12 PM,Panel 2,Chino HS,Med Varsity NT Int.
-3:16 PM,Panel 1,Cerritos HS,Small Varsity NT Nov.
-3:20 PM,Panel 2,Kennedy HS,Med Varsity NT Int.
-3:24 PM,Panel 1,Whittier HS,Small Varsity NT Nov.
-3:28 PM,Panel 2,La Habra HS,Varsity Co-Ed NT Int.
-3:32 PM,Panel 1,Don Lugo HS,Med/Lg Varsity NT Nov.
-3:36 PM,Panel 2,Costa Mesa HS,Small Varsity NT Adv.
-3:40 PM,Panel 1,Carter HS,Med/Lg Varsity NT Nov.
-3:44 PM,Panel 2,Saugus HS,Small Varsity NT Adv.
-3:48 PM,Panel 1,Sierra Vista HS,Med/Lg Varsity NT Nov.
-3:52 PM,Panel 2,Sonora HS,Med/Lg Varsity NT Adv.
-3:56 PM,Panel 1,Jurupa Valley HS,Med/Lg Varsity NT Nov.
-4:00 PM,Panel 2,Rialto HS,Med/Lg Varsity NT Adv.
-4:04 PM,Panel 1,Ayala HS,Super Varsity NT Nov.
-4:08 PM,Panel 2,Ocean View HS,Varsity Co-Ed NT Adv.
-4:12 PM,Panel 1,Bolsa Grande HS,Varsity Co-Ed NT Nov.
-4:16 PM,Panel 2,Long Beach City College,College Small Co-Ed
-4:20 PM,Panel 1,Cal Baptist Univ Golden Girls,College Exhibition
-4:24 PM,Panel 2,Mt. San Antonio College,College Large Co-Ed
-4:28 PM,Panel 1,Cal Baptist Univ Blue Crew,College Exhibition
-4:32 PM,Panel 2,CSU San Bernardino,College Small Co-Ed
-5:30 PM,Panel 1,Ayala HS,Game Day Spirit Song / Dance
-5:34 PM,Panel 2,Orange Lutheran HS,Varsity Dance Exhibition
-5:38 PM,Panel 1,Hoover HS,Varsity 1 Flag
-5:42 PM,Panel 2,Hoover HS,JV Pom Nov.
-5:46 PM,Panel 1,Townsend Jr. High,Jr. High Pom
-5:50 PM,Panel 2,La Serna HS,JV Pom Adv.
-5:54 PM,Panel 1,Cypress HS,JV Pom Int.
-5:58 PM,Panel 2,Yorba Linda HS,JV Pom Adv.
-6:02 PM,Panel 1,Ayala HS,JV Pom Int.
-6:06 PM,Panel 2,Orange Lutheran HS,JV Pom Adv.
-6:10 PM,Panel 1,Sonora HS,Varsity Jazz Int.
-6:14 PM,Panel 2,Whittier HS,Small Varsity Pom Nov.
-6:18 PM,Panel 1,Cypress HS,Varsity Jazz Int.
-6:22 PM,Panel 2,El Modena HS,Med Varsity Pom Nov.
-6:26 PM,Panel 1,Ayala HS,Small/Med Varsity Jazz Adv.
-6:30 PM,Panel 2,La Mirada HS,Varsity Pom Int.
-6:34 PM,Panel 1,Orange Lutheran HS,Small/Med Varsity Jazz Adv.
-6:38 PM,Panel 2,Sonora HS,Varsity Pom Int.
-6:42 PM,Panel 1,La Serna HS,Large Varsity Jazz Adv.
-6:46 PM,Panel 2,Cypress HS,Varsity Pom Int.
-6:50 PM,Panel 1,Yorba Linda HS,Large Varsity Jazz Adv.
-6:54 PM,Panel 2,Hoover HS,Varsity Pom Int.
-6:58 PM,Panel 1,Hoover HS,Varsity 2 Flags
-7:02 PM,Panel 2,Ayala HS,Small Varsity Pom Adv.
-7:06 PM,Panel 1,Cypress HS,JV Jazz Int.
-7:14 PM,Panel 1,Orange Lutheran HS,JV Jazz Adv.
-7:18 PM,Panel 2,La Serna HS,Med/Large Varsity Pom Adv.
-7:22 PM,Panel 1,Yorba Linda HS,JV Jazz Adv.
-7:26 PM,Panel 2,Orange Lutheran HS,Med/Large Varsity Pom Adv.
-7:30 PM,Panel 1,La Mirada HS,Varsity Hip Hop
-7:34 PM,Panel 2,Yorba Linda HS,Med/Large Varsity Pom Adv.
-7:38 PM,Panel 1,Cypress HS,Varsity Hip Hop
+checkin,time,stage,team,division
+8:19 AM,9:04 AM,Panel 2,Azusa Raiders - Jr. Gremlins,8U Level 1
+8:23 AM,9:08 AM,Panel 1,Canyon Lake MS,Jr. High Int.
+8:27 AM,9:12 AM,Panel 2,Azusa Raiders - Gremlin,10U Level 1
+8:31 AM,9:16 AM,Panel 1,Saint Barbara School,Elementary Nov.
+8:35 AM,9:20 AM,Panel 2,Azusa Raiders - Jr. Midgets,13U Level 2
+8:39 AM,9:24 AM,Panel 1,Mayfair MS,EXHIBITION Jr. High
+8:43 AM,9:28 AM,Panel 2,Saugus Spartan X-Treme,13U NT Level 3
+8:47 AM,9:32 AM,Panel 1,Shandin Hills MS,Jr. High NT Nov.
+8:51 AM,9:36 AM,Panel 2,Billy Clower X-Plosion,10U Level 1
+8:55 AM,9:40 AM,Panel 1,Carter HS,Varsity Group Stunt Int.
+8:59 AM,9:44 AM,Panel 2,Empire Athletics - Tiny Sparkles,6U Level 1 Limited
+9:03 AM,9:48 AM,Panel 1,Orange Lutheran HS,Varsity Group Stunt Int.
+9:07 AM,9:52 AM,Panel 2,Royal Storm - Mini Mafia,6U Level 1 Limited
+9:11 AM,9:56 AM,Panel 1,Elsinore HS,Varsity Group Stunt Int.
+9:15 AM,10:00 AM,Panel 2,Starlights Cheer - Twyla,8U Level 1 Limited
+9:19 AM,10:04 AM,Panel 1,OPEN,OPEN
+9:23 AM,10:08 AM,Panel 2,Supernova Stardust,8U Level 1 Limited
+9:27 AM,10:12 AM,Panel 1,Canyon Lake MS A,Jr. High Group Stunt Nov.
+9:31 AM,10:16 AM,Panel 2,Billy Clower Sparks,8U Level 1 Limited
+9:35 AM,10:20 AM,Panel 1,Canyon Lake MS B,Jr. High Group Stunt Nov.
+9:39 AM,10:24 AM,Panel 2,SMAX - Pop Princesses,10U Level 1 Limited
+9:43 AM,10:28 AM,Panel 1,Canyon Lake MS C,Jr. High Group Stunt Nov.
+9:47 AM,10:32 AM,Panel 2,Rise Up Athletics - White Frost,12U Level 1
+9:51 AM,10:36 AM,Panel 1,Mayfair HS,EXHIBITION Varsity
+9:55 AM,10:40 AM,Panel 2,Royal Storm - Shade,12U Level 1
+9:59 AM,10:44 AM,Panel 1,Canyon Lake MS (INT),Jr. High Group Stunt Int.
+10:03 AM,10:48 AM,Panel 2,Mayans Cheer & Dance - Shade,14U Level 1
+10:07 AM,10:52 AM,Panel 1,Ayala HS,Varsity Mascot
+10:11 AM,10:56 AM,Panel 2,SMAX - Rock Legends,14U Level 1
+10:15 AM,11:00 AM,Panel 1,Canyon Lake MS (ADV),Jr. High Group Stunt Adv.
+10:19 AM,11:04 AM,Panel 2,Starlights Cheer - Nova,18U Level 1
+10:23 AM,11:08 AM,Panel 1,OPEN,OPEN
+10:27 AM,11:12 AM,Panel 2,Rise Up Athletics - Teal Tide,14U Level 2
+10:31 AM,11:16 AM,Panel 1,Orange Lutheran HS,Small Game Day Spirit Cheer / All Prog.
+10:35 AM,11:20 AM,Panel 2,Murrieta Mavericks - Fearless,14U Level 2
+10:39 AM,11:24 AM,Panel 1,Saugus HS,Small Game Day Spirit Cheer / All Prog.
+10:43 AM,11:28 AM,Panel 2,Supernova Stellar,14U Level 2
+10:47 AM,11:32 AM,Panel 1,Cerritos HS,Large Game Day Spirit Cheer / All Prog.
+10:51 AM,11:36 AM,Panel 2,So Cal Thunder Shock,16U Level 2
+10:55 AM,11:40 AM,Panel 1,Chino Hills HS,Large Game Day Spirit Cheer / All Prog.
+10:59 AM,11:44 AM,Panel 2,Billy Clower Dynamite,16U Level 2
+11:03 AM,11:48 AM,Panel 1,Yorba Linda HS,Large Game Day Spirit Cheer / All Prog.
+11:07 AM,11:52 AM,Panel 2,Royal Storm - Karma,10U Level 2
+11:11 AM,11:56 AM,Panel 1,Rise Up Athletics - Blue Rain,14U Level 3
+
+12:15 PM,1:00 PM,Panel 1,Summit HS,Freshman Nov.
+12:19 PM,1:04 PM,Panel 2,Century HS,Small JV Nov.
+12:23 PM,1:08 PM,Panel 1,Downey HS,Freshman Nov.
+12:27 PM,1:12 PM,Panel 2,Cypress HS,Small JV Nov.
+12:31 PM,1:16 PM,Panel 1,Paramount HS,Freshman Nov.
+12:35 PM,1:20 PM,Panel 2,Temescal Canyon HS,Small JV Nov.
+12:39 PM,1:24 PM,Panel 1,Downey HS,Small JV Int.
+12:43 PM,1:28 PM,Panel 2,Cypress HS,Small Varsity Nov.
+12:47 PM,1:32 PM,Panel 1,El Dorado HS,Small JV Int.
+12:51 PM,1:36 PM,Panel 2,Palm Desert HS,Small Varsity Nov.
+12:55 PM,1:40 PM,Panel 1,Yorba Linda HS,Small JV Int.
+12:59 PM,1:44 PM,Panel 2,Yucaipa HS,Med/Lg Varsity Nov.
+1:03 PM,1:48 PM,Panel 1,La Serna HS,Large JV Int.
+1:07 PM,1:52 PM,Panel 2,Charter Oak HS,Med/Lg Varsity Nov.
+1:11 PM,1:56 PM,Panel 1,Summit HS,JV Co-Ed Nov.
+1:15 PM,2:00 PM,Panel 2,Upland HS,Super Varsity Nov.
+1:19 PM,2:04 PM,Panel 1,Mayfair HS,Small JV NT Nov.
+1:23 PM,2:08 PM,Panel 2,Century HS,Varsity Co-Ed Nov.
+1:27 PM,2:12 PM,Panel 1,Cerritos HS,Small JV NT Nov.
+1:31 PM,2:16 PM,Panel 2,Chino Hills HS,Varsity Int.
+1:35 PM,2:20 PM,Panel 1,Sonora HS,Small JV NT Nov.
+1:39 PM,2:24 PM,Panel 2,Summit HS,Varsity Co-Ed Int.
+1:43 PM,2:28 PM,Panel 1,Paramount HS,Small JV NT Nov.
+1:47 PM,2:32 PM,Panel 2,La Serna HS,Varsity Adv.
+1:51 PM,2:36 PM,Panel 1,Maria Carrillo HS,Small JV NT Nov.
+1:55 PM,2:40 PM,Panel 2,Yorba Linda HS,Varsity Adv.
+1:59 PM,2:44 PM,Panel 1,La Mirada HS,Large JV NT Nov.
+2:03 PM,2:48 PM,Panel 2,Downey HS,Varsity Small Co-Ed Adv.
+2:07 PM,2:52 PM,Panel 1,Saugus HS,Small JV NT Adv.
+2:11 PM,2:56 PM,Panel 2,Elsinore HS,Small Varsity NT Int.
+2:15 PM,3:00 PM,Panel 1,Rialto HS,Large JV NT Adv.
+2:19 PM,3:04 PM,Panel 2,La Mirada HS,Med Varsity NT Int.
+2:23 PM,3:08 PM,Panel 1,La Habra HS,JV Co-Ed NT Nov.
+2:27 PM,3:12 PM,Panel 2,Chino HS,Med Varsity NT Int.
+2:31 PM,3:16 PM,Panel 1,Cerritos HS,Small Varsity NT Nov.
+2:35 PM,3:20 PM,Panel 2,Kennedy HS,Med Varsity NT Int.
+2:39 PM,3:24 PM,Panel 1,Whittier HS,Small Varsity NT Nov.
+2:43 PM,3:28 PM,Panel 2,La Habra HS,Varsity Co-Ed NT Int.
+2:47 PM,3:32 PM,Panel 1,Don Lugo HS,Med/Lg Varsity NT Nov.
+2:51 PM,3:36 PM,Panel 2,Costa Mesa HS,Small Varsity NT Adv.
+2:55 PM,3:40 PM,Panel 1,Carter HS,Med/Lg Varsity NT Nov.
+2:59 PM,3:44 PM,Panel 2,Saugus HS,Small Varsity NT Adv.
+3:03 PM,3:48 PM,Panel 1,Sierra Vista HS,Med/Lg Varsity NT Nov.
+3:07 PM,3:52 PM,Panel 2,Sonora HS,Med/Lg Varsity NT Adv.
+3:11 PM,3:56 PM,Panel 1,Jurupa Valley HS,Med/Lg Varsity NT Nov.
+3:15 PM,4:00 PM,Panel 2,Rialto HS,Med/Lg Varsity NT Adv.
+3:19 PM,4:04 PM,Panel 1,Ayala HS,Super Varsity NT Nov.
+3:23 PM,4:08 PM,Panel 2,Ocean View HS,Varsity Co-Ed NT Adv.
+3:27 PM,4:12 PM,Panel 1,Bolsa Grande HS,Varsity Co-Ed NT Nov.
+3:31 PM,4:16 PM,Panel 2,Long Beach City College,College Small Co-Ed
+3:35 PM,4:20 PM,Panel 1,Cal Baptist Univ Golden Girls,College Exhibition
+3:39 PM,4:24 PM,Panel 2,Mt. San Antonio College,College Large Co-Ed
+3:43 PM,4:28 PM,Panel 1,Cal Baptist Univ Blue Crew,College Exhibition
+3:47 PM,4:32 PM,Panel 2,CSU San Bernardino,College Small Co-Ed
+
+4:45 PM,5:30 PM,Panel 1,Ayala HS,Game Day Spirit Song / Dance
+4:49 PM,5:34 PM,Panel 2,Orange Lutheran HS,Varsity Dance Exhibition
+4:53 PM,5:38 PM,Panel 1,Hoover HS,Varsity 1 Flag
+4:57 PM,5:42 PM,Panel 2,Hoover HS,JV Pom Nov.
+5:01 PM,5:46 PM,Panel 1,Townsend Jr. High,Jr. High Pom
+5:05 PM,5:50 PM,Panel 2,La Serna HS,JV Pom Adv.
+5:09 PM,5:54 PM,Panel 1,Cypress HS,JV Pom Int.
+5:13 PM,5:58 PM,Panel 2,Yorba Linda HS,JV Pom Adv.
+5:17 PM,6:02 PM,Panel 1,Ayala HS,JV Pom Int.
+5:21 PM,6:06 PM,Panel 2,Orange Lutheran HS,JV Pom Adv.
+5:25 PM,6:10 PM,Panel 1,Sonora HS,Varsity Jazz Int.
+5:29 PM,6:14 PM,Panel 2,Whittier HS,Small Varsity Pom Nov.
+5:33 PM,6:18 PM,Panel 1,Cypress HS,Varsity Jazz Int.
+5:37 PM,6:22 PM,Panel 2,El Modena HS,Med Varsity Pom Nov.
+5:41 PM,6:26 PM,Panel 1,Ayala HS,Small/Med Varsity Jazz Adv.
+5:45 PM,6:30 PM,Panel 2,La Mirada HS,Varsity Pom Int.
+5:49 PM,6:34 PM,Panel 1,Orange Lutheran HS,Small/Med Varsity Jazz Adv.
+5:53 PM,6:38 PM,Panel 2,Sonora HS,Varsity Pom Int.
+5:57 PM,6:42 PM,Panel 1,La Serna HS,Large Varsity Jazz Adv.
+6:01 PM,6:46 PM,Panel 2,Cypress HS,Varsity Pom Int.
+6:05 PM,6:50 PM,Panel 1,Yorba Linda HS,Large Varsity Jazz Adv.
+6:09 PM,6:54 PM,Panel 2,Hoover HS,Varsity Pom Int.
+6:13 PM,6:58 PM,Panel 1,Hoover HS,Varsity 2 Flags
+6:17 PM,7:02 PM,Panel 2,Ayala HS,Small Varsity Pom Adv.
+6:21 PM,7:06 PM,Panel 1,Cypress HS,JV Jazz Int.
+6:29 PM,7:14 PM,Panel 1,Orange Lutheran HS,JV Jazz Adv.
+6:33 PM,7:18 PM,Panel 2,La Serna HS,Med/Large Varsity Pom Adv.
+6:37 PM,7:22 PM,Panel 1,Yorba Linda HS,JV Jazz Adv.
+6:41 PM,7:26 PM,Panel 2,Orange Lutheran HS,Med/Large Varsity Pom Adv.
+6:45 PM,7:30 PM,Panel 1,La Mirada HS,Varsity Hip Hop
+6:49 PM,7:34 PM,Panel 2,Yorba Linda HS,Med/Large Varsity Pom Adv.
+6:53 PM,7:38 PM,Panel 1,Cypress HS,Varsity Hip Hop

@@ -74,6 +74,10 @@ th { text-align: left; font-size: 0.7rem; text-transform: uppercase; color: var(
 td { padding: 12px; border-bottom: 1px solid var(--border); }
 tr.highlight { background: #eff6ff; color: var(--primary); font-weight: 700; }
 
+/* TIME STYLES */
+.time-checkin { color: var(--text-muted); font-size: 0.85rem; }
+.time-main { color: var(--primary); }
+
 /* TICKETS */
 .ticket-card { max-width: 450px; margin: 0 auto; }
 .price-box { background: #eff6ff; padding: 25px; border-radius: 16px; border: 2px dashed var(--primary); margin-bottom: 25px; text-align: center; }

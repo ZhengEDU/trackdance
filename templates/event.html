@@ -84,12 +84,19 @@
             <div class="card">
                 <table>
                     <thead>
-                        <tr><th>Time</th><th>Panel</th><th>Division</th><th>Team</th></tr>
+                        <tr>
+                            <th>Check-In</th>
+                            <th>Time</th>
+                            <th>Panel</th>
+                            <th>Division</th>
+                            <th>Team</th>
+                        </tr>
                     </thead>
                     <tbody>
                         {% for p in performances %}
                         <tr data-team="{{ p.team }}" data-division="{{ p.division }}">
-                            <td data-label="Time">{{ p.time }}</td>
+                            <td data-label="Check-In" class="time-checkin">{{ p.checkin }}</td>
+                            <td data-label="Time" class="time-main"><strong>{{ p.time }}</strong></td>
                             <td data-label="Panel">{{ p.stage }}</td>
                             <td data-label="Division">{{ p.division }}</td>
                             <td data-label="Team"><strong>{{ p.team }}</strong></td>
