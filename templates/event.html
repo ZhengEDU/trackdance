@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>trackdance| CA Dance and Cheer Competition </title>
+    <title>trackdance | CA Dance and Cheer Competition </title>
     <link rel="stylesheet" href="/static/style.css">
 </head>
 <body>
@@ -23,6 +23,7 @@
             <a href="#" class="nav-item" data-view="info">Information</a>
             <a href="#" class="nav-item" data-view="schedule">Schedule</a>
             <a href="#" class="nav-item" data-view="placements">Placements</a>
+            <a href="#" class="nav-item" data-view="tickets">Tickets</a>
         </nav>
     </aside>
 
@@ -40,8 +41,7 @@
                             <p>Riverside Convention Center</p>
                             <a href="https://www.google.com/maps/search/?api=1&query=3637+5th+St+Riverside+CA+92501"
                                target="_blank"
-                               class="address-link"
-                               style="color: var(--primary); text-decoration: none; font-size: 0.85rem; font-weight: 400; display: block; margin-top: 4px;">
+                               class="address-link">
                                3637 5th St, Riverside, CA 92501
                             </a>
                         </div>
@@ -57,9 +57,9 @@
                 </div>
             </div>
         </div>
+
         <div id="schedule" class="view">
             <h1>Schedule</h1>
-
             <div class="filter-bar card">
                 <div class="filter-group">
                     <label>Team</label>
@@ -112,6 +112,37 @@
                 </div>
             </div>
             {% endfor %}
+        </div>
+
+        <div id="tickets" class="view">
+            <h1>Tickets</h1>
+            <div class="card ticket-card">
+                <div style="text-align: center; padding: 10px 0;">
+                    <div style="font-size: 3rem; margin-bottom: 10px;">🎟️</div>
+                    <h2 style="font-weight: 900; margin-bottom: 5px; text-transform: uppercase;">General Admission</h2>
+                    <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 20px;">
+                        CHEERpros 2026 CALIFORNIA CHAMPIONSHIPS
+                    </p>
+
+                    <div class="price-box">
+                        <span class="price-label">All-In Price (Fees Included)</span>
+                        <span class="price-value">$22.75</span>
+                    </div>
+
+                    <a href="https://aftontickets.com/CHEERprosCALICHAMPS26" target="_blank" class="buy-btn">
+                        Get Tickets Now
+                    </a>
+
+                    <div class="ticket-rules">
+                        <ul>
+                            <li>Children 2 and under are <strong>FREE</strong></li>
+                            <li>Wristbands must be worn at all times</li>
+                            <li>Tickets are non-refundable</li>
+                            <li>Arrive at least 15 mins prior to performance</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </div>
     </main>
 </div>
