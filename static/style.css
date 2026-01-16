@@ -64,19 +64,40 @@ h1 { font-weight: 900; font-size: 2rem; margin-bottom: 24px; letter-spacing: -1p
 .address-link { color: var(--primary); text-decoration: none; font-size: 0.85rem; font-weight: 400; display: block; margin-top: 4px; }
 .address-link:hover { text-decoration: underline; }
 
-.filter-bar { display: flex; gap: 15px; flex-wrap: wrap; }
-.filter-group { display: flex; flex-direction: column; gap: 5px; }
-.filter-group label { font-size: 0.7rem; font-weight: 900; text-transform: uppercase; color: var(--text-muted); }
-.filter-group select { padding: 8px; border-radius: 6px; border: 1.5px solid var(--border); font-family: 'Montserrat'; font-weight: 700; min-width: 180px; }
+/* SELECTION MENU (CLEANED UP) */
+.filter-bar { display: flex; gap: 20px; flex-wrap: wrap; background: #fdfdfd; }
+.filter-group { display: flex; flex-direction: column; gap: 6px; flex: 1; min-width: 200px; }
+.filter-group label { font-size: 0.75rem; font-weight: 900; text-transform: uppercase; color: var(--text-muted); letter-spacing: 0.5px; }
+.filter-group select {
+    appearance: none;
+    background-color: #fff;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 12px 15px;
+    font-family: inherit;
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: var(--text-main);
+    cursor: pointer;
+    background-image: url("data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20width%3D%2224%22%20height%3D%2224%22%20viewBox%3D%220%200%2024%2024%22%20fill%3D%22none%22%20stroke%3D%22%2364748b%22%20stroke-width%3D%222%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%3E%3Cpolyline%20points%3D%226%209%2012%2015%2018%209%22%3E%3C/polyline%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    background-size: 18px;
+}
 
 table { width: 100%; border-collapse: collapse; }
 th { text-align: left; font-size: 0.7rem; text-transform: uppercase; color: var(--text-muted); padding: 12px; border-bottom: 2px solid var(--border); }
 td { padding: 12px; border-bottom: 1px solid var(--border); }
-tr.highlight { background: #eff6ff; color: var(--primary); font-weight: 700; }
 
 /* TIME STYLES */
 .time-checkin { color: var(--text-muted); font-size: 0.85rem; }
 .time-main { color: var(--primary); }
+
+/* BREAK/AWARDS ROWS */
+tr[data-division="BREAK"], tr[data-division="AWARDS"] {
+    background-color: #f8fafc;
+    font-style: italic;
+}
 
 /* TICKETS */
 .ticket-card { max-width: 450px; margin: 0 auto; }
@@ -85,8 +106,6 @@ tr.highlight { background: #eff6ff; color: var(--primary); font-weight: 700; }
 .price-value { font-size: 2.5rem; font-weight: 900; color: var(--text-main); }
 .buy-btn { display: block; background: var(--primary); color: white; text-decoration: none; padding: 18px; border-radius: 12px; font-weight: 900; text-transform: uppercase; text-align: center; transition: 0.3s; }
 .buy-btn:hover { transform: translateY(-3px); box-shadow: 0 8px 25px rgba(37, 99, 235, 0.4); }
-.ticket-rules { margin-top: 25px; text-align: left; background: #f8fafc; padding: 15px; border-radius: 10px; border: 1px solid var(--border); }
-.ticket-rules ul { margin: 0; padding-left: 20px; font-size: 0.8rem; color: var(--text-muted); }
 
 /* PLACEMENTS */
 .division-block { border: 1px solid var(--border); border-radius: 10px; margin-bottom: 10px; overflow: hidden; }
@@ -94,7 +113,6 @@ tr.highlight { background: #eff6ff; color: var(--primary); font-weight: 700; }
 .division-results { display: none; padding: 15px; background: #fafafa; border-top: 1px solid var(--border); }
 .division-results.open { display: block; }
 
-/* MOBILE RESPONSIVENESS */
 @media (max-width: 768px) {
     .menu-toggle { display: block; }
     .close-sidebar { display: block; }

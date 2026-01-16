@@ -66,7 +66,9 @@
                     <select id="teamSelect">
                         <option value="">All Teams</option>
                         {% for team in teams %}
+                        {% if team != "OPEN" and team != "BREAK" and team != "AWARDS" %}
                         <option value="{{ team }}">{{ team }}</option>
+                        {% endif %}
                         {% endfor %}
                     </select>
                 </div>
@@ -75,7 +77,9 @@
                     <select id="divisionSelect">
                         <option value="">All Divisions</option>
                         {% for division in divisions %}
+                        {% if division != "OPEN" and division != "BREAK" and division != "AWARDS" %}
                         <option value="{{ division }}">{{ division }}</option>
+                        {% endif %}
                         {% endfor %}
                     </select>
                 </div>
@@ -110,6 +114,7 @@
         <div id="placements" class="view">
             <h1>Placements</h1>
             {% for p in placements %}
+            {% if p.division != "BREAK" and p.division != "AWARDS" and p.division != "OPEN" %}
             <div class="division-block">
                 <button class="division-toggle">
                     {{ p.division }} <span>+</span>
@@ -118,6 +123,7 @@
                     <p style="color: var(--text-muted); font-style: italic;">Results pending...</p>
                 </div>
             </div>
+            {% endif %}
             {% endfor %}
         </div>
 
