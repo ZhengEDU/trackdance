@@ -32,21 +32,15 @@
             <h1>Information</h1>
             <div class="card">
                 <p>Welcome to the Cheerpros CA Cheer and Dance Competition. Use the menu to check performance times and final placements.</p>
-
                 <div class="info-grid">
                     <div class="info-item">
                         <div class="info-icon">📍</div>
                         <div class="info-text">
                             <strong>Venue Location</strong>
                             <p>Riverside Convention Center</p>
-                            <a href="https://www.google.com/maps/search/?api=1&query=3637+5th+St+Riverside+CA+92501"
-                               target="_blank"
-                               class="address-link">
-                               3637 5th St, Riverside, CA 92501
-                            </a>
+                            <a href="https://www.google.com/maps/search/?api=1&query=3637+5th+St+Riverside+CA+92501" target="_blank" class="address-link">3637 5th St, Riverside, CA 92501</a>
                         </div>
                     </div>
-
                     <div class="info-item">
                         <div class="info-icon">📅</div>
                         <div class="info-text">
@@ -60,15 +54,40 @@
 
         <div id="schedule" class="view">
             <h1>Schedule</h1>
+
+            <div class="advisory-card">
+                <div class="advisory-icon">⚠️</div>
+                <div class="advisory-text">
+                    <strong>Schedule Advisory</strong>
+                    <p>Performance times are approximate. Events may run ahead or experience delays. Please arrive early.</p>
+                </div>
+            </div>
+
+            <div class="card awards-card">
+                <h3 style="margin-top: 0; font-size: 0.9rem; text-transform: uppercase; color: var(--primary);">Awards Timeline</h3>
+                <div class="awards-grid">
+                    <div class="award-slot">
+                        <span>Morning Session</span>
+                        <strong>12:00 PM</strong>
+                    </div>
+                    <div class="award-slot">
+                        <span>Afternoon Session</span>
+                        <strong>4:36 PM</strong>
+                    </div>
+                    <div class="award-slot">
+                        <span>Evening Session</span>
+                        <strong>7:42 PM</strong>
+                    </div>
+                </div>
+            </div>
+
             <div class="filter-bar card">
                 <div class="filter-group">
                     <label>Team</label>
                     <select id="teamSelect">
                         <option value="">All Teams</option>
                         {% for team in teams %}
-                        {% if team != "OPEN" and team != "BREAK" and team != "AWARDS" %}
-                        <option value="{{ team }}">{{ team }}</option>
-                        {% endif %}
+                        {% if team not in ["OPEN", "BREAK", "AWARDS"] %}<option value="{{ team }}">{{ team }}</option>{% endif %}
                         {% endfor %}
                     </select>
                 </div>
@@ -77,9 +96,7 @@
                     <select id="divisionSelect">
                         <option value="">All Divisions</option>
                         {% for division in divisions %}
-                        {% if division != "OPEN" and division != "BREAK" and division != "AWARDS" %}
-                        <option value="{{ division }}">{{ division }}</option>
-                        {% endif %}
+                        {% if division not in ["OPEN", "BREAK", "AWARDS"] %}<option value="{{ division }}">{{ division }}</option>{% endif %}
                         {% endfor %}
                     </select>
                 </div>
@@ -89,6 +106,7 @@
                 <table>
                     <thead>
                         <tr>
+                            <th>Session</th>
                             <th>Check-In</th>
                             <th>Time</th>
                             <th>Panel</th>
@@ -98,7 +116,23 @@
                     </thead>
                     <tbody>
                         {% for p in performances %}
+                        {% set time_val = p.time %}
+                        {% set session_label = "Evening" %}
+
+                        {# Simplified session logic for common competition times #}
+                        {% if "AM" in time_val or "12:" in time_val %}
+                            {% set session_label = "Morning" %}
+                        {% elif "1:" in time_val or "2:" in time_val or "3:" in time_val or "4:" in time_val %}
+                            {% set session_label = "Afternoon" %}
+                        {% elif "5:" in time_val and "PM" in time_val %}
+                            {# Split 5:00 PM hour at 5:30 #}
+                            {% if "5:0" in time_val or "5:1" in time_val or "5:2" in time_val %}
+                                {% set session_label = "Afternoon" %}
+                            {% endif %}
+                        {% endif %}
+
                         <tr data-team="{{ p.team }}" data-division="{{ p.division }}">
+                            <td data-label="Session"><span class="session-tag {{ session_label|lower }}">{{ session_label }}</span></td>
                             <td data-label="Check-In" class="time-checkin">{{ p.checkin }}</td>
                             <td data-label="Time" class="time-main"><strong>{{ p.time }}</strong></td>
                             <td data-label="Panel">{{ p.stage }}</td>
@@ -114,11 +148,9 @@
         <div id="placements" class="view">
             <h1>Placements</h1>
             {% for p in placements %}
-            {% if p.division != "BREAK" and p.division != "AWARDS" and p.division != "OPEN" %}
+            {% if p.division not in ["BREAK", "AWARDS", "OPEN"] %}
             <div class="division-block">
-                <button class="division-toggle">
-                    {{ p.division }} <span>+</span>
-                </button>
+                <button class="division-toggle">{{ p.division }} <span>+</span></button>
                 <div class="division-results">
                     <p style="color: var(--text-muted); font-style: italic;">Results pending...</p>
                 </div>
@@ -133,27 +165,12 @@
                 <div style="text-align: center; padding: 10px 0;">
                     <div style="font-size: 3rem; margin-bottom: 10px;">🎟️</div>
                     <h2 style="font-weight: 900; margin-bottom: 5px; text-transform: uppercase;">General Admission</h2>
-                    <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 20px;">
-                        CHEERpros 2026 CALIFORNIA CHAMPIONSHIPS
-                    </p>
-
+                    <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 20px;">CHEERpros 2026 CALIFORNIA CHAMPIONSHIPS</p>
                     <div class="price-box">
                         <span class="price-label">All-In Price (Fees Included)</span>
                         <span class="price-value">$22.75</span>
                     </div>
-
-                    <a href="https://aftontickets.com/CHEERprosCALICHAMPS26" target="_blank" class="buy-btn">
-                        Get Tickets Now
-                    </a>
-
-                    <div class="ticket-rules">
-                        <ul>
-                            <li>Children 2 and under are <strong>FREE</strong></li>
-                            <li>Wristbands must be worn at all times</li>
-                            <li>Tickets are non-refundable</li>
-                            <li>Arrive at least 15 mins prior to performance</li>
-                        </ul>
-                    </div>
+                    <a href="https://aftontickets.com/CHEERprosCALICHAMPS26" target="_blank" class="buy-btn">Get Tickets Now</a>
                 </div>
             </div>
         </div>

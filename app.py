@@ -14,8 +14,8 @@ def load_performances():
 @app.route("/<path:path>")
 def event(path=None):
     performances = load_performances()
-    teams = sorted(set(p["team"] for p in performances))
-    divisions = sorted(set(p["division"] for p in performances))
+    teams = sorted(set(p["team"] for p in performances if p["team"]))
+    divisions = sorted(set(p["division"] for p in performances if p["division"]))
     placements = [{"division": d, "results": None} for d in divisions]
 
     return render_template(

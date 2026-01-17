@@ -37,14 +37,19 @@ document.addEventListener("DOMContentLoaded", () => {
         showView(link.dataset.view);
     }));
 
-    // Filter Logic
     function applyFilters() {
         const team = document.getElementById("teamSelect").value;
         const division = document.getElementById("divisionSelect").value;
         document.querySelectorAll("tbody tr").forEach(row => {
+            const isBreak = row.dataset.division === "BREAK" || row.dataset.division === "AWARDS";
             const tMatch = !team || row.dataset.team === team;
             const dMatch = !division || row.dataset.division === division;
-            row.style.display = (tMatch && dMatch) ? "" : "none";
+
+            if (isBreak || (tMatch && dMatch)) {
+                row.style.display = "";
+            } else {
+                row.style.display = "none";
+            }
         });
     }
 
@@ -53,7 +58,6 @@ document.addEventListener("DOMContentLoaded", () => {
         document.getElementById("divisionSelect").addEventListener("change", applyFilters);
     }
 
-    // Accordion Logic
     document.addEventListener("click", e => {
         const btn = e.target.closest(".division-toggle");
         if (btn) {
